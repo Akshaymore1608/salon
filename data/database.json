@@ -1,0 +1,319 @@
+{
+  "business": {
+    "name": "Maddy's Unisex Salon & Academy",
+    "shortName": "Maddy's Salon",
+    "tagline": "Your Style, Your Way — Premium Hair, Beauty & Academy in Wagholi, Pune",
+    "address": "Shop No. 18, Rainbow Crossroads, McDonald's Building, BJS College Chowk, Bakori Phata, Pune–Nagar Road, Wagholi, Pune, Maharashtra 412207, India",
+    "phone": "+91 95956 98986",
+    "formattedPhone": "+91 95956 98986",
+    "whatsapp": "919595698986",
+    "email": "contact@maddysalon.in",
+    "openingTime": "09:00",
+    "closingTime": "22:00",
+    "daysOpen": "Monday – Sunday (All 7 Days)",
+    "establishedYear": 2021,
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.9868772099955!2d73.986875!3d18.577234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c30000000001%3A0x0!2sRainbow%20Crossroads%2C%20Bakori%20Phata%2C%20Wagholi!5e0!3m2!1sen!2sin!4v1700000000000",
+    "mapDirectionsUrl": "https://maps.google.com/?q=Rainbow+Crossroads+McDonalds+Building+Bakori+Phata+Wagholi+Pune",
+    "ratings": {
+      "overall": 4.7,
+      "totalReviews": 492,
+      "platforms": [
+        {
+          "name": "Google Business",
+          "score": 4.7,
+          "count": 200,
+          "verified": true,
+          "icon": "google"
+        },
+        {
+          "name": "Justdial",
+          "score": 4.6,
+          "count": 204,
+          "verified": true,
+          "icon": "justdial"
+        },
+        {
+          "name": "Magicpin",
+          "score": 4.7,
+          "count": 88,
+          "verified": true,
+          "icon": "magicpin"
+        }
+      ]
+    }
+  },
+  "services": [
+    {
+      "id": "hair-1",
+      "category": "hair",
+      "name": "Signature Precision Haircut & Styling",
+      "gender": "Unisex",
+      "duration": "45 mins",
+      "price": 349,
+      "popular": true,
+      "description": "Customized styling tailored to your face structure, hair texture and lifestyle. Includes scalp consultation, wash and blow-dry styling.",
+      "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "hair-2",
+      "category": "hair",
+      "name": "Keratin Silk Smooth Therapy",
+      "gender": "Unisex",
+      "duration": "150 mins",
+      "price": 3499,
+      "popular": true,
+      "description": "Deep protein infusion to eliminate frizz, restore shine and deliver mirror-glass smoothness for 3-5 months with L’Oréal Professionnel products.",
+      "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "hair-3",
+      "category": "hair",
+      "name": "Cysteine Hair Protein Infusion",
+      "gender": "Unisex",
+      "duration": "180 mins",
+      "price": 4199,
+      "popular": false,
+      "description": "100% formaldehyde-free smoothing treatment ideal for damaged or chemically treated locks. Restores natural curl softness and elasticity.",
+      "image": "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "hair-4",
+      "category": "hair",
+      "name": "Balayage / Global Color & Highlights",
+      "gender": "Unisex",
+      "duration": "120 mins",
+      "price": 2799,
+      "popular": true,
+      "description": "Master colorists using premium ammonia-free colors. Custom multi-dimensional shades designed for Indian skin undertones.",
+      "image": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "grooming-1",
+      "category": "grooming",
+      "name": "Royal Beard Sculpt & Hot Towel Shave",
+      "gender": "Men",
+      "duration": "35 mins",
+      "price": 299,
+      "popular": true,
+      "description": "Precision razor shaping, essential oil softening, dual hot-towel steam press and cold aloe soothing balm.",
+      "image": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "grooming-2",
+      "category": "grooming",
+      "name": "Men's Charcoal Detox & De-Tan Facial",
+      "gender": "Men",
+      "duration": "50 mins",
+      "price": 799,
+      "popular": false,
+      "description": "Deep pore extraction, activated bamboo charcoal scrub, anti-pollution tan removal pack, and hydrating face massage.",
+      "image": "https://images.unsplash.com/photo-1621607512214-68297480165e?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "skin-1",
+      "category": "skin",
+      "name": "Advanced Hydra-Glow Facial Therapy",
+      "gender": "Unisex",
+      "duration": "60 mins",
+      "price": 1499,
+      "popular": true,
+      "description": "Non-invasive vortex suction for deep blackhead cleansing, hyaluronic infusion, vitamin serum ultrasonic penetration and LED therapy.",
+      "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "skin-2",
+      "category": "skin",
+      "name": "O3+ Radiance Whitening & Anti-Tan",
+      "gender": "Unisex",
+      "duration": "75 mins",
+      "price": 1899,
+      "popular": false,
+      "description": "Award-winning skin brightening formula that targets stubborn pigmentation, uneven skin tone, and restores luminous glow.",
+      "image": "https://images.unsplash.com/photo-1512290900672-1f55b9e075c3?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "makeup-1",
+      "category": "makeup",
+      "name": "Luxury Bridal HD Makeup & Hair Styling",
+      "gender": "Women",
+      "duration": "180 mins",
+      "price": 7999,
+      "popular": true,
+      "description": "Long-wearing camera-ready HD bridal makeup, luxury lash extension, traditional/modern hair styling, saree/dupatta draping, and jewelry setting.",
+      "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "makeup-2",
+      "category": "makeup",
+      "name": "Engagement / Party Glam Look",
+      "gender": "Women",
+      "duration": "90 mins",
+      "price": 2499,
+      "popular": false,
+      "description": "Dewy or matte high-definition glamour makeup with custom contouring, winged eyeliner, and artistic hairstyle.",
+      "image": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "nails-1",
+      "category": "nails",
+      "name": "Nail Buffing, High-Shine & Spa Care",
+      "gender": "Unisex",
+      "duration": "40 mins",
+      "price": 499,
+      "popular": false,
+      "description": "Cuticle revival, organic almond oil massage, precision filing, and chemical-free glass shine buffing.",
+      "image": "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "hair-5",
+      "category": "hair",
+      "name": "Gentle Kids & Toddler Haircut",
+      "gender": "Kids",
+      "duration": "30 mins",
+      "price": 249,
+      "popular": true,
+      "description": "Patient, gentle stylists praised by Wagholi parents. Fun and stress-free environment with hypoallergenic products.",
+      "image": "https://images.unsplash.com/photo-1595867818088-57d17469a9ec?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "academy": [
+    {
+      "id": "acad-1",
+      "title": "Master Hair Dressing & Chemical Artistry",
+      "duration": "3 Months (Hands-on Live Models)",
+      "level": "Beginner to Pro",
+      "certification": "Maddy's Academy Professional Diploma",
+      "topics": [
+        "Advanced Scissor & Clipper Techniques",
+        "Keratin & Cysteine Chemistry",
+        "Balayage & Color Correction",
+        "Client Consultation Mastery"
+      ],
+      "image": "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "acad-2",
+      "title": "Professional Barbering & Men's Grooming",
+      "duration": "6 Weeks Intensive",
+      "level": "All Levels",
+      "certification": "Certified Master Barber Certificate",
+      "topics": [
+        "Skin Fades & Texturizing",
+        "Straight Razor Hot Shaves",
+        "Beard Architecture & Contouring",
+        "Grooming Product Chemistry"
+      ],
+      "image": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "acad-3",
+      "title": "Bridal Artistry & HD Glam Makeup",
+      "duration": "2 Months Course",
+      "level": "Intermediate",
+      "certification": "Certified Bridal Makeup Artist",
+      "topics": [
+        "HD & Airbrush Techniques",
+        "Bridal Hair Sculpting & Floral Setup",
+        "Saree & Dupatta Draping",
+        "Portfolio Building & Client Management"
+      ],
+      "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev-1793195788447",
+      "author": "Kavita Rathi",
+      "rating": 5,
+      "platform": "Website Verified Client",
+      "service": "Balayage / Global Color & Highlights",
+      "date": "Just now",
+      "verified": true,
+      "comment": "Amazing highlights and balayage blend! The salon ambience in Wagholi is so luxurious and welcoming.",
+      "helpful": 1
+    },
+    {
+      "id": "rev-1",
+      "author": "Rohit Deshmukh",
+      "rating": 5,
+      "platform": "Google",
+      "service": "Keratin Silk Smooth Therapy",
+      "date": "2 days ago",
+      "verified": true,
+      "comment": "Had an incredible keratin treatment here! The staff really listened to how I wanted my hair managed without making it pin straight. Super polite team and the salon is spotless near McDonald's Wagholi.",
+      "helpful": 14
+    },
+    {
+      "id": "rev-2",
+      "author": "Pooja Kulkarni",
+      "rating": 5,
+      "platform": "Justdial",
+      "service": "Signature Precision Haircut & Styling",
+      "date": "1 week ago",
+      "verified": true,
+      "comment": "Very friendly staff and clean setup. My haircut turned out even better than the reference picture I showed. They give genuine advice on hair maintenance without pushing unnecessary products.",
+      "helpful": 9
+    },
+    {
+      "id": "rev-3",
+      "author": "Sachin & Sneha Sharma",
+      "rating": 5,
+      "platform": "Magicpin",
+      "service": "Gentle Kids & Toddler Haircut",
+      "date": "2 weeks ago",
+      "verified": true,
+      "comment": "Bringing a 3-year old for a haircut is usually a nightmare, but the stylist at Maddy's was extraordinarily patient and calm. Truly grateful for their gentle handling. Highly recommend to all Wagholi parents!",
+      "helpful": 23
+    },
+    {
+      "id": "rev-4",
+      "author": "Amitabh Roy",
+      "rating": 5,
+      "platform": "Google",
+      "service": "Royal Beard Sculpt & Hot Towel Shave",
+      "date": "3 weeks ago",
+      "verified": true,
+      "comment": "Best beard trim and hot towel experience in the Bakori Phata area. Clean blades, fresh towels, and precision line-up. Very reasonable pricing for the quality they deliver.",
+      "helpful": 7
+    },
+    {
+      "id": "rev-5",
+      "author": "Ananya Joshi",
+      "rating": 5,
+      "platform": "Justdial",
+      "service": "Luxury Bridal HD Makeup & Hair Styling",
+      "date": "1 month ago",
+      "verified": true,
+      "comment": "Booked bridal hair styling and makeup for my brother's reception. The look lasted all night without creasing and photographed gorgeously. They are truly dedicated professionals.",
+      "helpful": 18
+    },
+    {
+      "id": "rev-6",
+      "author": "Vikas Gaikwad",
+      "rating": 4,
+      "platform": "Magicpin",
+      "service": "Advanced Hydra-Glow Facial Therapy",
+      "date": "1 month ago",
+      "verified": true,
+      "comment": "Very relaxing facial and noticeable glow afterwards. The staff confirmed all steps before applying products. It can get busy on Sunday evenings so definitely pre-book your slot online!",
+      "helpful": 12
+    }
+  ],
+  "bookings": [
+    {
+      "bookingRef": "MS-805755",
+      "fullName": "Siddharth Verma",
+      "phone": "9876543210",
+      "email": "",
+      "serviceName": "Keratin Silk Smooth Therapy",
+      "servicePrice": 3499,
+      "date": "2026-10-29",
+      "timeSlot": "11:30 AM",
+      "stylistPreference": "Master Hair Specialist",
+      "notes": "Keratin smoothing for wavy hair",
+      "status": "Confirmed",
+      "createdAt": "2026-10-28T13:56:45.755Z"
+    }
+  ],
+  "academyEnquiries": []
+}

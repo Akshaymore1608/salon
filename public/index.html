@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maddy's Unisex Salon & Academy | Wagholi, Pune</title>
+  <meta name="description" content="Experience premium hair styling, keratin smoothing, men's grooming, bridal artistry and academy courses at Maddy's Unisex Salon & Academy, Rainbow Crossroads, Wagholi, Pune. Open daily 9 AM - 10 PM.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement & Live Status Banner -->
+  <div class="top-banner" id="topBanner">
+    <div class="container banner-flex">
+      <div class="live-pill" id="livePill">
+        <span class="pulse-dot"></span>
+        <span id="liveStatusText">Checking salon status...</span>
+      </div>
+      <div class="banner-info">
+        <span><i class="fa-solid fa-clock"></i> Daily: <strong>9:00 AM – 10:00 PM</strong></span>
+        <span class="separator">•</span>
+        <span><i class="fa-solid fa-location-dot"></i> Rainbow Crossroads, Wagholi, Pune</span>
+      </div>
+      <div class="banner-cta">
+        <a href="tel:+919595698986" class="phone-link"><i class="fa-solid fa-phone"></i> +91 95956 98986</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Luxury Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo">
+        <div class="logo-emblem">
+          <i class="fa-solid fa-scissors"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">MADDY'S</span>
+          <span class="brand-sub">UNISEX SALON & ACADEMY</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services & Prices</a>
+        <a href="#transformations" class="nav-link">Gallery</a>
+        <a href="#status-widget" class="nav-link">Live Status & Hours</a>
+        <a href="#reviews" class="nav-link highlight-nav">Reviews & Ratings</a>
+        <a href="#academy" class="nav-link">Academy</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-outline" id="quickCallBtn" onclick="window.location.href='tel:+919595698986'">
+          <i class="fa-solid fa-phone"></i> <span>Call</span>
+        </button>
+        <button class="btn btn-primary" id="headerBookBtn" onclick="openBookingModal()">
+          <i class="fa-solid fa-calendar-check"></i> <span>Book Slot</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Animated Luxury Backdrop -->
+  <section class="hero-section" id="home">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="luxury-badge">
+          <i class="fa-solid fa-award"></i> Wagholi's Highly Rated Unisex Destination • Est. 2021
+        </div>
+        <h1 class="hero-title">
+          Your Style, <span class="gradient-text">Your Way.</span>
+        </h1>
+        <p class="hero-desc">
+          Step into Wagholi's premier beauty sanctuary near Rainbow Crossroads. From master precision haircuts, keratin & cysteine therapies to royal men’s grooming and bridal glam—tailored specifically to your vision.
+        </p>
+
+        <!-- Live quick stats chips -->
+        <div class="hero-stats-chips">
+          <div class="chip">
+            <i class="fa-solid fa-star text-gold"></i>
+            <span><strong>4.7★</strong> Google & Magicpin</span>
+          </div>
+          <div class="chip">
+            <i class="fa-solid fa-star text-gold"></i>
+            <span><strong>4.6★</strong> Justdial (204+ Ratings)</span>
+          </div>
+          <div class="chip">
+            <i class="fa-solid fa-shield-halved text-gold"></i>
+            <span>Verified L’Oréal Care</span>
+          </div>
+        </div>
+
+        <div class="hero-btns">
+          <button class="btn btn-primary btn-lg" onclick="openBookingModal()">
+            <i class="fa-solid fa-calendar-plus"></i> Book Appointment Now
+          </button>
+          <a href="https://wa.me/919595698986?text=Hi%20Maddy's%20Salon,%20I%20would%20like%20to%20enquire%20about%20a%20service" target="_blank" class="btn btn-whatsapp btn-lg">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+          </a>
+          <a href="#services" class="btn btn-ghost btn-lg">
+            Explore Menu <i class="fa-solid fa-arrow-down"></i>
+          </a>
+        </div>
+
+        <div class="hero-guarantee">
+          <i class="fa-solid fa-circle-check text-gold"></i>
+          <span>Transparent upfront pricing • Sanitized tools • Polite & attentive stylists</span>
+        </div>
+      </div>
+
+      <!-- Hero Visual Showcase -->
+      <div class="hero-visual">
+        <div class="visual-card-wrapper">
+          <div class="visual-card main-visual">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" alt="Maddy's Unisex Salon styling experience" class="hero-img">
+            <div class="floating-glass-card top-right-card">
+              <div class="mini-icon"><i class="fa-solid fa-sparkles"></i></div>
+              <div>
+                <p class="tag-title">Keratin & Cysteine</p>
+                <p class="tag-sub">Smooth & Frizz-Free Artistry</p>
+              </div>
+            </div>
+            <div class="floating-glass-card bottom-left-card">
+              <div class="avatar-group">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Client avatar">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Client avatar">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80" alt="Client avatar">
+              </div>
+              <div class="client-count">
+                <strong>4.7 ★★★★★</strong>
+                <span>492+ Happy Clients in Pune</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE SALON STATUS & HOURS CHECKER (Answers whether shop is running & wait times) -->
+  <section class="live-status-section" id="status-widget">
+    <div class="container">
+      <div class="status-box">
+        <div class="status-header">
+          <div class="status-indicator-badge" id="statusLiveBadge">
+            <span class="live-pulse"></span>
+            <span id="statusBadgeText">Checking Live Operations...</span>
+          </div>
+          <div class="status-realtime-clock">
+            <i class="fa-solid fa-clock"></i> Current Time: <span id="clockDisplay">--:-- IST</span>
+          </div>
+        </div>
+
+        <div class="status-grid">
+          <div class="status-item">
+            <div class="icon-circle"><i class="fa-solid fa-door-open"></i></div>
+            <div>
+              <p class="status-label">Operational Hours</p>
+              <h3 class="status-val" id="statusHours">9:00 AM – 10:00 PM</h3>
+              <p class="status-sub">Open 7 days a week, Monday through Sunday</p>
+            </div>
+          </div>
+
+          <div class="status-item">
+            <div class="icon-circle"><i class="fa-solid fa-user-group"></i></div>
+            <div>
+              <p class="status-label">Live Salon Crowd & Wait-Time</p>
+              <h3 class="status-val" id="crowdStatusVal">Moderate Wait</h3>
+              <p class="status-sub" id="crowdSubText">Estimated wait: ~15 mins for walk-ins</p>
+            </div>
+          </div>
+
+          <div class="status-item">
+            <div class="icon-circle"><i class="fa-solid fa-calendar-check"></i></div>
+            <div>
+              <p class="status-label">Next Available Booking</p>
+              <h3 class="status-val text-gold" id="nextSlotText">Instant Slots Available</h3>
+              <p class="status-sub">Appointments get zero-wait priority</p>
+            </div>
+          </div>
+
+          <div class="status-item cta-item">
+            <button class="btn btn-primary btn-block" onclick="openBookingModal()">
+              <i class="fa-solid fa-bolt"></i> Reserve Priority Slot
+            </button>
+            <a href="https://maps.google.com/?q=Rainbow+Crossroads+McDonalds+Building+Bakori+Phata+Wagholi+Pune" target="_blank" class="btn btn-outline btn-block">
+              <i class="fa-solid fa-diamond-turn-right"></i> Navigate to Salon
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES & PRICING CATALOG -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="section-tag"><i class="fa-solid fa-scissors"></i> Comprehensive Service Menu</span>
+        <h2 class="section-title">Artistry, Care & <span class="gradient-text">Precision</span></h2>
+        <p class="section-desc">
+          Clear, transparent starting pricing. Every treatment includes personal consultation to match your hair texture and skin needs before we begin.
+        </p>
+
+        <!-- Category Filters -->
+        <div class="filter-tabs">
+          <button class="tab-btn active" data-filter="all">All Services</button>
+          <button class="tab-btn" data-filter="hair">Hair Styling & Treatments</button>
+          <button class="tab-btn" data-filter="grooming">Men's Grooming</button>
+          <button class="tab-btn" data-filter="skin">Facials & Skin Care</button>
+          <button class="tab-btn" data-filter="makeup">Bridal & Glamour</button>
+          <button class="tab-btn" data-filter="nails">Nail Spa</button>
+        </div>
+      </div>
+
+      <!-- Services Grid (Loaded Dynamically from Backend) -->
+      <div class="services-grid" id="servicesGrid">
+        <div class="loader-placeholder">
+          <div class="spinner"></div>
+          <p>Loading curated services from backend...</p>
+        </div>
+      </div>
+
+      <!-- Service Consultation Note -->
+      <div class="service-notice-banner">
+        <div class="notice-icon"><i class="fa-solid fa-info-circle"></i></div>
+        <div class="notice-text">
+          <strong>Transparent Consultation Promise:</strong>
+          Prices shown are standard starting rates. Hair treatment costs vary depending on length, volume, and chemical history. Our stylists always confirm the final price before beginning your service!
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEFORE & AFTER TRANSFORMATION GALLERY -->
+  <section class="transformations-section" id="transformations">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="section-tag"><i class="fa-solid fa-camera"></i> Real Transformations</span>
+        <h2 class="section-title">See The <span class="gradient-text">Maddy's Difference</span></h2>
+        <p class="section-desc">
+          From frizzy unruly locks to luminous silk finish, precision skin fades, and regal bridal looks crafted right here in Wagholi.
+        </p>
+      </div>
+
+      <!-- Interactive Before/After Comparison Card -->
+      <div class="transformation-showcase">
+        <div class="comparison-card">
+          <div class="comparison-header">
+            <h4>Keratin Silk Protein Transformation</h4>
+            <span class="duration-pill"><i class="fa-regular fa-clock"></i> 2.5 Hours Treatment</span>
+          </div>
+          <div class="slider-container" id="beforeAfterSlider">
+            <div class="img-wrapper before-img">
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=80" alt="Hair before treatment - frizzy and unmanageable">
+              <span class="label-tag label-before">BEFORE (Frizzy & Dull)</span>
+            </div>
+            <div class="img-wrapper after-img" id="afterImageWrapper">
+              <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=80" alt="Hair after Keratin treatment - sleek and shiny">
+              <span class="label-tag label-after">AFTER (Silk Mirror Glow)</span>
+            </div>
+            <input type="range" min="0" max="100" value="50" class="slider" id="compareSlider" aria-label="Compare Before and After">
+            <div class="slider-divider" id="sliderDivider">
+              <div class="slider-handle">
+                <i class="fa-solid fa-arrows-left-right"></i>
+              </div>
+            </div>
+          </div>
+          <p class="comparison-caption">Slide left and right to inspect the gloss, fiber restoration, and frizz elimination.</p>
+        </div>
+      </div>
+
+      <!-- Gallery Grid of Salon & Work -->
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80" alt="Men's Beard Sculpt & Precision Fade">
+          <div class="gallery-overlay">
+            <span class="gallery-cat">Men's Grooming</span>
+            <h5>Precision Beard Sculpt & Line-up</h5>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80" alt="Bridal HD Glamour Makeup">
+          <div class="gallery-overlay">
+            <span class="gallery-cat">Bridal Artistry</span>
+            <h5>Camera-Ready HD Bridal Glam</h5>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=600&q=80" alt="Balayage Hair Color Treatment">
+          <div class="gallery-overlay">
+            <span class="gallery-cat">Hair Coloring</span>
+            <h5>Golden Caramel Balayage Highlights</h5>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" alt="Hydra Facial Cleanse">
+          <div class="gallery-overlay">
+            <span class="gallery-cat">Skin Care</span>
+            <h5>Deep Hydra Pore Clarifying Facial</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIALLY HIGHLIGHTED: REVIEWS & FEEDBACK HUB -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="section-tag"><i class="fa-solid fa-star-half-stroke"></i> Client Testimonials & Verifications</span>
+        <h2 class="section-title">What Wagholi Clients <span class="gradient-text">Say About Us</span></h2>
+        <p class="section-desc">
+          Honest feedback across Justdial, Google Business, and Magicpin. We listen to client preferences, provide calm handling for kids, and maintain strict hygiene.
+        </p>
+      </div>
+
+      <!-- Rating Metrics Dashboard -->
+      <div class="rating-dashboard">
+        <div class="rating-overall">
+          <div class="big-rating-number" id="avgRatingDisplay">4.7</div>
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="overall-caption">Overall Trust Rating</p>
+          <span class="badge-verified"><i class="fa-solid fa-shield-check"></i> Based on 492+ Real Reviews</span>
+        </div>
+
+        <div class="platform-cards-row">
+          <!-- Google Card -->
+          <div class="platform-score-card">
+            <div class="platform-header">
+              <i class="fa-brands fa-google text-gold fa-2x"></i>
+              <div>
+                <h5>Google Reviews</h5>
+                <p>Local Business Rating</p>
+              </div>
+            </div>
+            <div class="platform-body">
+              <div class="score-row">
+                <span class="score-number">4.7</span>
+                <span class="score-max">/ 5.0</span>
+              </div>
+              <p class="count-tag"><i class="fa-solid fa-users"></i> ~200 Reviews</p>
+            </div>
+          </div>
+
+          <!-- Justdial Card -->
+          <div class="platform-score-card">
+            <div class="platform-header">
+              <div class="platform-initials-jd">JD</div>
+              <div>
+                <h5>Justdial</h5>
+                <p>Public Verified Listing</p>
+              </div>
+            </div>
+            <div class="platform-body">
+              <div class="score-row">
+                <span class="score-number">4.6</span>
+                <span class="score-max">/ 5.0</span>
+              </div>
+              <p class="count-tag"><i class="fa-solid fa-users"></i> 204 Verified Ratings</p>
+            </div>
+          </div>
+
+          <!-- Magicpin Card -->
+          <div class="platform-score-card">
+            <div class="platform-header">
+              <i class="fa-solid fa-gem text-gold fa-2x"></i>
+              <div>
+                <h5>Magicpin</h5>
+                <p>Verified Salon Snapshot</p>
+              </div>
+            </div>
+            <div class="platform-body">
+              <div class="score-row">
+                <span class="score-number">4.7</span>
+                <span class="score-max">/ 5.0</span>
+              </div>
+              <p class="count-tag"><i class="fa-solid fa-users"></i> 88 Customer Ratings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review Action Bar (Filters + Write Review) -->
+      <div class="review-action-bar">
+        <div class="review-filter-pills">
+          <button class="review-pill active" data-review-filter="all">All Reviews</button>
+          <button class="review-pill" data-review-filter="5">5 ★ Only</button>
+          <button class="review-pill" data-review-filter="Google">Google</button>
+          <button class="review-pill" data-review-filter="Justdial">Justdial</button>
+          <button class="review-pill" data-review-filter="Magicpin">Magicpin</button>
+        </div>
+
+        <button class="btn btn-outline" id="openReviewModalBtn" onclick="openReviewModal()">
+          <i class="fa-solid fa-pen-to-square"></i> <span>Write A Review</span>
+        </button>
+      </div>
+
+      <!-- Review Feed (Loaded from Backend) -->
+      <div class="reviews-grid" id="reviewsGrid">
+        <div class="loader-placeholder">
+          <div class="spinner"></div>
+          <p>Fetching authentic customer reviews...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MADDY'S ACADEMY SECTION -->
+  <section class="academy-section" id="academy">
+    <div class="container">
+      <div class="academy-box">
+        <div class="academy-header">
+          <div class="academy-badge">
+            <i class="fa-solid fa-graduation-cap"></i> Professional Training Wing
+          </div>
+          <h2 class="academy-title">Maddy's Academy of <span class="gradient-text">Hair & Beauty Artistry</span></h2>
+          <p class="academy-subtitle">
+            Turn your passion into a thriving high-income career. Learn directly on live models in Wagholi under master stylists with industry-recognized certification.
+          </p>
+        </div>
+
+        <div class="courses-grid" id="coursesGrid">
+          <!-- Loaded dynamically from /api/academy -->
+        </div>
+
+        <div class="academy-footer-callout">
+          <div class="callout-content">
+            <h4>Ready to Master Professional Hairdressing & Grooming?</h4>
+            <p>Batch sizes are limited to 6 students to ensure individual 1-on-1 hands-on mentoring and kit allocation.</p>
+          </div>
+          <button class="btn btn-primary btn-lg" onclick="openAcademyEnquiryModal()">
+            <i class="fa-solid fa-envelope-open-text"></i> Enquire About Next Batch
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION, OPENING HOURS & APPOINTMENT FAQ -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="section-tag"><i class="fa-solid fa-location-arrow"></i> Visit Us in Wagholi</span>
+        <h2 class="section-title">Location, Hours & <span class="gradient-text">Easy Access</span></h2>
+        <p class="section-desc">
+          Conveniently situated on Pune-Nagar Road near BJS College Chowk and McDonald's Building with easy parking.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact & Hours Details -->
+        <div class="contact-card">
+          <h3><i class="fa-solid fa-store text-gold"></i> Salon Details</h3>
+          
+          <div class="detail-item">
+            <div class="detail-icon"><i class="fa-solid fa-map-pin"></i></div>
+            <div>
+              <strong>Physical Address:</strong>
+              <p>Shop No. 18, Rainbow Crossroads, McDonald’s Building, BJS College Chowk, Bakori Phata, Pune–Nagar Road, Wagholi, Pune, Maharashtra 412207, India.</p>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <strong>Direct Salon Phone:</strong>
+              <p><a href="tel:+919595698986" class="phone-link">+91 95956 98986</a></p>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <div class="detail-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <strong>WhatsApp Booking Desk:</strong>
+              <p><a href="https://wa.me/919595698986" target="_blank">+91 95956 98986 (Instant Chat)</a></p>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <div class="detail-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <strong>Operating Hours Schedule:</strong>
+              <ul class="hours-list">
+                <li><span>Monday – Friday:</span> <strong>9:00 AM – 10:00 PM</strong></li>
+                <li><span>Saturday:</span> <strong>9:00 AM – 10:00 PM</strong></li>
+                <li><span>Sunday:</span> <strong>9:00 AM – 10:00 PM</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <a href="https://maps.google.com/?q=Rainbow+Crossroads+McDonalds+Building+Bakori+Phata+Wagholi+Pune" target="_blank" class="btn btn-primary">
+              <i class="fa-solid fa-diamond-turn-right"></i> Open in Google Maps
+            </a>
+            <button class="btn btn-outline" onclick="openBookingModal()">
+              <i class="fa-solid fa-calendar-check"></i> Book Online
+            </button>
+          </div>
+        </div>
+
+        <!-- Google Map Interactive Embed -->
+        <div class="map-card">
+          <div class="map-frame-wrapper">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.990262176882!2d73.986875!3d18.577234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c30000000001%3A0x0!2sRainbow%20Crossroads%2C%20Bakori%20Phata%2C%20Wagholi!5e0!3m2!1sen!2sin!4v1700000000000" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Maddy's Unisex Salon & Academy Google Map Location">
+            </iframe>
+          </div>
+          <div class="map-info-bar">
+            <span><i class="fa-solid fa-car"></i> Ample 2-wheeler & 4-wheeler parking available</span>
+            <span><i class="fa-solid fa-landmark"></i> Landmark: McDonald's Building, Bakori Phata</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="brand-text">
+          <span class="brand-title">MADDY'S</span>
+          <span class="brand-sub">UNISEX SALON & ACADEMY</span>
+        </div>
+        <p class="footer-desc">
+          Wagholi's premier unisex destination for bespoke hair transformations, keratin therapies, royal barbering, hydra skin rejuvenation, and academy education.
+        </p>
+        <div class="social-links">
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://wa.me/919595698986" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="tel:+919595698986" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services & Rates</a></li>
+          <li><a href="#transformations">Gallery & Transformations</a></li>
+          <li><a href="#reviews">Verified Client Reviews</a></li>
+          <li><a href="#academy">Academy Courses</a></li>
+          <li><a href="#contact">Contact & Map</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h5>Top Services</h5>
+        <ul>
+          <li><a href="#services">Keratin Silk Therapy</a></li>
+          <li><a href="#services">Cysteine Protein Treatment</a></li>
+          <li><a href="#services">Signature Haircuts</a></li>
+          <li><a href="#services">Royal Beard Sculpting</a></li>
+          <li><a href="#services">Hydra-Glow Facial</a></li>
+          <li><a href="#services">Bridal HD Packages</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h5>Verified Schedule</h5>
+        <p><i class="fa-solid fa-check text-gold"></i> Daily: 9:00 AM – 10:00 PM</p>
+        <p><i class="fa-solid fa-location-dot text-gold"></i> Rainbow Crossroads, Wagholi, Pune 412207</p>
+        <p><i class="fa-solid fa-phone text-gold"></i> +91 95956 98986</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>© 2026 Maddy's Unisex Salon & Academy. All Rights Reserved. Established 2021.</p>
+        <p class="disclaimer-text">All service prices are starting estimates and will be finalized after your hair/skin consultation.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING PERSISTENT MOBILE ACTION BAR -->
+  <div class="floating-mobile-bar">
+    <a href="tel:+919595698986" class="mobile-action-btn call-action">
+      <i class="fa-solid fa-phone"></i>
+      <span>Call Now</span>
+    </a>
+    <a href="https://wa.me/919595698986?text=Hi%20Maddy's%20Salon,%20I%20would%20like%20to%20book%20an%20appointment" target="_blank" class="mobile-action-btn whatsapp-action">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
+    <button class="mobile-action-btn book-action" onclick="openBookingModal()">
+      <i class="fa-solid fa-calendar-check"></i>
+      <span>Book Slot</span>
+    </button>
+    <a href="https://maps.google.com/?q=Rainbow+Crossroads+McDonalds+Building+Bakori+Phata+Wagholi+Pune" target="_blank" class="mobile-action-btn directions-action">
+      <i class="fa-solid fa-diamond-turn-right"></i>
+      <span>Directions</span>
+    </a>
+  </div>
+
+  <!-- BOOKING MODAL (Full interactive appointment wizard connected to backend) -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeBookingModal()" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-header">
+        <span class="modal-badge"><i class="fa-solid fa-calendar-check"></i> Priority Reservation</span>
+        <h3>Book Your Salon Slot</h3>
+        <p>Skip the wait! Direct confirmation connected to Maddy's Wagholi front desk.</p>
+      </div>
+
+      <form id="bookingForm" onsubmit="handleBookingSubmit(event)">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="bookFullName"><i class="fa-solid fa-user"></i> Full Name *</label>
+            <input type="text" id="bookFullName" required placeholder="e.g. Rahul Sharma">
+          </div>
+
+          <div class="form-group">
+            <label for="bookPhone"><i class="fa-solid fa-phone"></i> WhatsApp Phone Number *</label>
+            <input type="tel" id="bookPhone" required placeholder="e.g. 9876543210" pattern="[0-9]{10}" title="Please enter a valid 10-digit number">
+          </div>
+
+          <div class="form-group full-width">
+            <label for="bookServiceSelect"><i class="fa-solid fa-scissors"></i> Desired Service *</label>
+            <select id="bookServiceSelect" required>
+              <option value="">-- Choose Service --</option>
+              <!-- Filled via JavaScript -->
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="bookDate"><i class="fa-solid fa-calendar"></i> Appointment Date *</label>
+            <input type="date" id="bookDate" required>
+          </div>
+
+          <div class="form-group">
+            <label for="bookTimeSlot"><i class="fa-solid fa-clock"></i> Preferred Time Slot *</label>
+            <select id="bookTimeSlot" required>
+              <option value="">-- Select Time Slot --</option>
+              <option value="09:30 AM">09:30 AM (Opening Slot)</option>
+              <option value="10:30 AM">10:30 AM</option>
+              <option value="11:30 AM">11:30 AM</option>
+              <option value="12:30 PM">12:30 PM</option>
+              <option value="02:00 PM">02:00 PM (Afternoon)</option>
+              <option value="03:30 PM">03:30 PM</option>
+              <option value="05:00 PM">05:00 PM</option>
+              <option value="06:30 PM">06:30 PM (Evening)</option>
+              <option value="07:30 PM">07:30 PM</option>
+              <option value="08:30 PM">08:30 PM</option>
+              <option value="09:00 PM">09:00 PM (Last Slot)</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="bookStylist"><i class="fa-solid fa-user-tie"></i> Stylist Preference</label>
+            <select id="bookStylist">
+              <option value="Any Available Senior Stylist">Any Available Senior Stylist (Fastest)</option>
+              <option value="Master Hair Specialist">Master Hair Specialist</option>
+              <option value="Senior Barber & Beard Stylist">Senior Barber & Beard Stylist</option>
+              <option value="Bridal & Skin Esthetician">Bridal & Skin Esthetician</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="bookNotes"><i class="fa-solid fa-comment-dots"></i> Notes or Special Requests (Optional)</label>
+            <textarea id="bookNotes" rows="2" placeholder="e.g. Sensitive skin, reference haircut photo ready, child haircut"></textarea>
+          </div>
+        </div>
+
+        <div class="form-footer">
+          <div class="booking-notice">
+            <i class="fa-solid fa-shield-halved"></i> No advance payment required. Pay at the salon after 100% satisfaction.
+          </div>
+          <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitBookingBtn">
+            <i class="fa-solid fa-check"></i> Confirm Reservation
+          </button>
+        </div>
+      </form>
+
+      <!-- Confirmation Receipt Screen (Initially Hidden) -->
+      <div id="bookingConfirmationReceipt" class="receipt-screen" style="display: none;">
+        <div class="receipt-icon"><i class="fa-solid fa-circle-check text-gold"></i></div>
+        <h4>Appointment Confirmed!</h4>
+        <p class="receipt-ref">Booking Ref: <strong id="receiptRef">MS-000000</strong></p>
+        
+        <div class="receipt-summary">
+          <div class="receipt-row"><span>Client:</span> <strong id="receiptName">-</strong></div>
+          <div class="receipt-row"><span>Service:</span> <strong id="receiptService">-</strong></div>
+          <div class="receipt-row"><span>Date & Slot:</span> <strong id="receiptDateTime">-</strong></div>
+          <div class="receipt-row"><span>Starting Price:</span> <strong id="receiptPrice">₹-</strong></div>
+          <div class="receipt-row"><span>Location:</span> <span>Rainbow Crossroads, Wagholi</span></div>
+        </div>
+
+        <div class="receipt-actions">
+          <a href="#" id="receiptWhatsappLink" target="_blank" class="btn btn-whatsapp btn-block">
+            <i class="fa-brands fa-whatsapp"></i> Send Confirmation to Salon WhatsApp
+          </a>
+          <button class="btn btn-outline btn-block" onclick="closeBookingModal()">
+            Done & Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WRITE REVIEW MODAL (Directly connected to backend POST /api/reviews) -->
+  <div class="modal-overlay" id="reviewModal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeReviewModal()" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-header">
+        <span class="modal-badge"><i class="fa-solid fa-star"></i> Share Your Experience</span>
+        <h3>Write a Review for Maddy's</h3>
+        <p>Your feedback helps us continuously improve our services and rewards our stylists.</p>
+      </div>
+
+      <form id="reviewForm" onsubmit="handleReviewSubmit(event)">
+        <div class="form-group">
+          <label for="revAuthor"><i class="fa-solid fa-user"></i> Your Name *</label>
+          <input type="text" id="revAuthor" required placeholder="e.g. Priya Patil">
+        </div>
+
+        <div class="form-group">
+          <label><i class="fa-solid fa-star"></i> Your Rating *</label>
+          <div class="star-rating-input" id="starRatingInput">
+            <i class="fa-solid fa-star active" data-val="1"></i>
+            <i class="fa-solid fa-star active" data-val="2"></i>
+            <i class="fa-solid fa-star active" data-val="3"></i>
+            <i class="fa-solid fa-star active" data-val="4"></i>
+            <i class="fa-solid fa-star active" data-val="5"></i>
+            <input type="hidden" id="revRatingValue" value="5">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="revService"><i class="fa-solid fa-scissors"></i> Service Taken</label>
+          <input type="text" id="revService" placeholder="e.g. Keratin Treatment / Haircut & Beard Sculpt">
+        </div>
+
+        <div class="form-group">
+          <label for="revPlatform"><i class="fa-solid fa-tag"></i> Platform / Source</label>
+          <select id="revPlatform">
+            <option value="Website Client">Website Verified Client</option>
+            <option value="Google Reviewer">Google Reviewer</option>
+            <option value="Justdial Reviewer">Justdial Client</option>
+            <option value="Magicpin Reviewer">Magicpin Client</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="revComment"><i class="fa-solid fa-comment"></i> Your Honest Review *</label>
+          <textarea id="revComment" rows="4" required placeholder="Tell us about the staff, haircut styling, cleanliness, and overall experience..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitReviewBtn">
+          <i class="fa-solid fa-paper-plane"></i> Submit Review
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ACADEMY ENQUIRY MODAL -->
+  <div class="modal-overlay" id="academyModal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeAcademyModal()" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-header">
+        <span class="modal-badge"><i class="fa-solid fa-graduation-cap"></i> Professional Certification</span>
+        <h3>Academy Course Enquiry</h3>
+        <p>Get syllabus details, fee structure, and upcoming batch dates.</p>
+      </div>
+
+      <form id="academyForm" onsubmit="handleAcademySubmit(event)">
+        <div class="form-group">
+          <label for="acadName">Full Name *</label>
+          <input type="text" id="acadName" required placeholder="e.g. Sneha Pawar">
+        </div>
+
+        <div class="form-group">
+          <label for="acadPhone">Phone Number *</label>
+          <input type="tel" id="acadPhone" required placeholder="e.g. 9876543210">
+        </div>
+
+        <div class="form-group">
+          <label for="acadCourse">Interested Course *</label>
+          <select id="acadCourse" required>
+            <option value="Master Hair Dressing & Chemical Artistry">Master Hair Dressing & Chemical Artistry (3 Months)</option>
+            <option value="Professional Barbering & Men's Grooming">Professional Barbering & Men's Grooming (6 Weeks)</option>
+            <option value="Bridal Artistry & HD Glam Makeup">Bridal Artistry & HD Glam Makeup (2 Months)</option>
+            <option value="Complete Professional Cosmetology Diploma">Complete Professional Cosmetology Diploma</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="acadBackground">Your Background (Optional)</label>
+          <input type="text" id="acadBackground" placeholder="e.g. Complete Beginner / Working Stylist">
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-lg">
+          <i class="fa-solid fa-paper-plane"></i> Request Course Prospectus
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span id="toastMsg">Notification message here</span>
+  </div>
+
+  <!-- Main JavaScript Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
