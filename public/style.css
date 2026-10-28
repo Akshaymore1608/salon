@@ -70,6 +70,17 @@
   --shadow-glow: 0 0 25px -4px rgba(179, 130, 40, 0.22);
 }
 
+[data-theme="light"] body {
+  background-color: #f8fafc;
+  background-image: 
+    radial-gradient(circle at 10% 15%, rgba(216, 170, 73, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 90% 85%, rgba(226, 232, 240, 0.7) 0%, transparent 55%),
+    url('images/salon-bg-pattern.svg');
+  background-repeat: repeat;
+  background-size: auto, auto, 360px 360px;
+  background-attachment: fixed;
+}
+
 [data-theme="light"] .top-banner {
   background: rgba(241, 245, 249, 0.96);
   border-bottom-color: rgba(15, 23, 42, 0.08);
@@ -262,6 +273,80 @@
   transform: rotate(360deg);
 }
 
+/* ===================================================================
+   FLOATING SALON EQUIPMENT & HAIRSTYLE AMBIENT ELEMENTS
+   =================================================================== */
+.ambient-equipment {
+  position: absolute;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 18px;
+  background: rgba(18, 22, 33, 0.78);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-full);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 0 15px -2px var(--gold-glow);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  pointer-events: none;
+  animation: floatAmbient 6s ease-in-out infinite alternate;
+}
+
+.ambient-equipment i {
+  color: var(--gold-primary);
+  font-size: 1.05rem;
+}
+
+[data-theme="light"] .ambient-equipment {
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.1), 0 0 15px -2px rgba(179, 130, 40, 0.15);
+  color: #0f172a;
+}
+
+.ambient-eq-1 {
+  top: 18%;
+  left: 2%;
+  animation-duration: 7s;
+}
+
+.ambient-eq-2 {
+  bottom: 8%;
+  left: 44%;
+  animation-duration: 8.5s;
+  animation-delay: -2s;
+}
+
+.ambient-eq-3 {
+  top: 14%;
+  right: 2%;
+  animation-duration: 6.5s;
+  animation-delay: -3s;
+}
+
+.ambient-eq-4 {
+  bottom: 6%;
+  right: 28%;
+  animation-duration: 7.5s;
+  animation-delay: -4s;
+}
+
+@keyframes floatAmbient {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(1.5deg); }
+  100% { transform: translateY(4px) rotate(-1.5deg); }
+}
+
+@media (max-width: 1024px) {
+  .ambient-equipment {
+    display: none;
+  }
+}
+
+
 /* Base Reset & Typography */
 * {
   margin: 0;
@@ -277,10 +362,18 @@ html {
 body {
   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: var(--bg-main);
+  background-image: 
+    radial-gradient(circle at 12% 18%, rgba(223, 186, 115, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 88% 82%, rgba(223, 186, 115, 0.06) 0%, transparent 50%),
+    url('images/salon-bg-pattern.svg');
+  background-repeat: repeat;
+  background-size: auto, auto, 360px 360px;
+  background-attachment: fixed;
   color: var(--text-main);
   line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.35s ease, color 0.35s ease;
 }
 
 h1, h2, h3, h4, h5, .brand-title {

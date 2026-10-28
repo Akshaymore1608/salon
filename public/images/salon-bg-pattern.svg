@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      .stroke-gold {
+        stroke: #c4973b;
+        stroke-width: 1.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+        opacity: 0.18;
+      }
+      .fill-gold {
+        fill: #c4973b;
+        opacity: 0.12;
+      }
+      .hair-strand {
+        stroke: #dfba73;
+        stroke-width: 1.2;
+        stroke-linecap: round;
+        fill: none;
+        opacity: 0.15;
+      }
+    </style>
+  </defs>
+
+  <!-- 1. Hair Scissors / Shears (Top Left) -->
+  <g transform="translate(40, 40) rotate(-25)">
+    <!-- Blade 1 -->
+    <path d="M10,80 L40,10" class="stroke-gold"/>
+    <circle cx="10" cy="85" r="7" class="stroke-gold"/>
+    <!-- Blade 2 -->
+    <path d="M30,80 L0,10" class="stroke-gold"/>
+    <circle cx="30" cy="85" r="7" class="stroke-gold"/>
+    <!-- Pivot Screw -->
+    <circle cx="20" cy="45" r="2.5" class="fill-gold"/>
+  </g>
+
+  <!-- 2. Hair Styling Comb (Top Right) -->
+  <g transform="translate(260, 50) rotate(35)">
+    <rect x="0" y="0" width="90" height="18" rx="4" class="stroke-gold fill-gold"/>
+    <!-- Comb Teeth -->
+    <line x1="8" y1="18" x2="8" y2="40" class="stroke-gold"/>
+    <line x1="16" y1="18" x2="16" y2="40" class="stroke-gold"/>
+    <line x1="24" y1="18" x2="24" y2="40" class="stroke-gold"/>
+    <line x1="32" y1="18" x2="32" y2="40" class="stroke-gold"/>
+    <line x1="40" y1="18" x2="40" y2="40" class="stroke-gold"/>
+    <line x1="48" y1="18" x2="48" y2="40" class="stroke-gold"/>
+    <line x1="56" y1="18" x2="56" y2="40" class="stroke-gold"/>
+    <line x1="64" y1="18" x2="64" y2="40" class="stroke-gold"/>
+    <line x1="72" y1="18" x2="72" y2="40" class="stroke-gold"/>
+    <line x1="80" y1="18" x2="80" y2="40" class="stroke-gold"/>
+  </g>
+
+  <!-- 3. Elegant Flowing Hair Style Silhouette Waves (Center) -->
+  <g transform="translate(140, 130)">
+    <!-- Flowing Hair Locks -->
+    <path d="M10,0 C30,40 -10,70 25,110 C50,140 15,160 30,190" class="hair-strand"/>
+    <path d="M22,5 C42,45 2,75 37,115 C62,145 27,165 42,195" class="hair-strand"/>
+    <path d="M-2,10 C18,50 -22,80 13,120 C38,150 3,170 18,200" class="hair-strand"/>
+    <path d="M34,10 C54,50 14,80 49,120 C74,150 39,170 54,200" class="hair-strand"/>
+  </g>
+
+  <!-- 4. Professional Hair Blow Dryer (Bottom Left) -->
+  <g transform="translate(60, 240) rotate(15)">
+    <!-- Main Body & Nozzle -->
+    <path d="M10,20 L45,20 L55,10 L75,10 L75,35 L55,35 L45,28 L10,28 Z" class="stroke-gold fill-gold"/>
+    <!-- Handle -->
+    <path d="M20,28 L15,65 L30,65 L35,28" class="stroke-gold"/>
+    <!-- Air Flow Wind Lines -->
+    <path d="M82,15 Q95,12 105,15" class="hair-strand"/>
+    <path d="M82,22 Q98,22 110,22" class="hair-strand"/>
+    <path d="M82,30 Q95,32 105,30" class="hair-strand"/>
+  </g>
+
+  <!-- 5. Barber Straight Razor / Shavette (Center Right) -->
+  <g transform="translate(280, 210) rotate(-45)">
+    <!-- Blade -->
+    <rect x="0" y="0" width="55" height="12" rx="2" class="stroke-gold fill-gold"/>
+    <!-- Handle / Pivot -->
+    <circle cx="5" cy="6" r="2.5" class="stroke-gold"/>
+    <path d="M5,6 L45,28" class="stroke-gold"/>
+  </g>
+
+  <!-- 6. Salon Spray Mist Bottle (Bottom Right) -->
+  <g transform="translate(300, 310)">
+    <!-- Bottle Body -->
+    <rect x="15" y="30" width="28" height="45" rx="6" class="stroke-gold fill-gold"/>
+    <!-- Neck -->
+    <rect x="23" y="18" width="12" height="12" class="stroke-gold"/>
+    <!-- Trigger Spray Head -->
+    <path d="M15,18 L35,18 L48,12 L45,8 L25,12 Z" class="stroke-gold"/>
+    <!-- Trigger Lever -->
+    <path d="M20,18 Q14,24 16,30" class="stroke-gold"/>
+    <!-- Spray Mist Dots -->
+    <circle cx="55" cy="8" r="1.5" class="fill-gold"/>
+    <circle cx="62" cy="5" r="1.2" class="fill-gold"/>
+    <circle cx="64" cy="12" r="1.5" class="fill-gold"/>
+  </g>
+
+  <!-- 7. Hair Curling / Straightening Wand (Top Center) -->
+  <g transform="translate(180, 20) rotate(-15)">
+    <line x1="0" y1="15" x2="50" y2="15" class="stroke-gold" stroke-width="3"/>
+    <rect x="50" y="11" width="25" height="8" rx="2" class="stroke-gold fill-gold"/>
+    <path d="M10,15 Q25,5 40,15" class="hair-strand"/>
+  </g>
+
+  <!-- 8. Gentle Hair Flow Ribbon & Sparkle (Bottom Center) -->
+  <g transform="translate(180, 330)">
+    <path d="M0,20 Q30,-10 60,20 T120,20" class="hair-strand"/>
+    <!-- Sparkle Stars -->
+    <path d="M40,5 L42,10 L47,12 L42,14 L40,19 L38,14 L33,12 L38,10 Z" class="fill-gold"/>
+    <path d="M90,30 L91,33 L94,34 L91,35 L90,38 L89,35 L86,34 L89,33 Z" class="fill-gold"/>
+  </g>
+</svg>
