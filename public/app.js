@@ -10,6 +10,7 @@ let currentReviewFilter = 'all';
 
 // DOM Content Loaded Handler
 document.addEventListener('DOMContentLoaded', () => {
+  initTheme();
   initLiveSalonStatus();
   fetchServices();
   fetchReviews();
@@ -574,4 +575,60 @@ function initMobileNav() {
       navMenu.classList.remove('open');
     });
   });
+}
+
+/* ===================================================================
+   9. WHITE / LIGHT THEME TOGGLE FEATURE ("White Feature in Top Right")
+   =================================================================== */
+function initTheme() {
+  const themeToggleBtn = document.getElementById('themeToggleBtn');
+
+  // Check saved theme or system preference
+  const savedTheme = localStorage.getItem('maddy_salon_theme');
+  if (savedTheme === 'light') {
+    applyTheme('light');
+  } else {
+    applyTheme('dark');
+  }
+
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      applyTheme(newTheme);
+      showToast(newTheme === 'light' ? '✨ Switched to White Mode' : '🌙 Switched to Dark Obsidian Mode', 'info');
+    });
+  }
+}
+
+function applyTheme(theme) {
+  const themeIcon = document.getElementById('themeIcon');
+  const themeText = document.getElementById('themeText');
+  const themeToggleBtn = document.getElementById('themeToggleBtn');
+
+  if (theme === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+    localStorage.setItem('maddy_salon_theme', 'light');
+    if (themeIcon) {
+      themeIcon.className = 'fa-solid fa-moon';
+    }
+    if (themeText) {
+      themeText.textContent = 'Dark Mode';
+    }
+    if (themeToggleBtn) {
+      themeToggleBtn.title = 'Switch to Dark Mode';
+    }
+  } else {
+    document.documentElement.removeAttribute('data-theme');
+    localStorage.setItem('maddy_salon_theme', 'dark');
+    if (themeIcon) {
+      themeIcon.className = 'fa-solid fa-sun';
+    }
+    if (themeText) {
+      themeText.textContent = 'White Mode';
+    }
+    if (themeToggleBtn) {
+      themeToggleBtn.title = 'Switch to White Mode';
+    }
+  }
 }
